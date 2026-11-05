@@ -1,0 +1,6 @@
+{
+  "name": "Brevent Sensi & XY Shell CMD Generator",
+  "description": "Generator kode CMD Brevent / ADB shell untuk sensitivity global, pengaturan sensitivitas sumbu X & Y, touch response, dan kurva sentuhan Free Fire Android.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
