@@ -29,6 +29,7 @@ import {
   Image as ImageIcon,
   Flame,
   ShieldCheck,
+  Download,
 } from 'lucide-react';
 
 export default function App() {
@@ -99,13 +100,22 @@ export default function App() {
 
           {/* Action Buttons */}
           <div className="flex items-center gap-1.5 shrink-0">
+            <a
+              href="/download/SHADORE-XY-Touch-v1.0.apk"
+              download="SHADORE-XY-Touch-v1.0.apk"
+              className="text-[11px] text-white bg-gradient-to-r from-[#9333EA] to-[#A855F7] hover:from-[#a855f7] hover:to-[#c084fc] px-2.5 py-1.5 rounded-lg border border-[#c084fc]/30 font-bold transition flex items-center gap-1 shadow-md shadow-[#9333EA]/30"
+              title="Download APK Resmi SHADØRE XY Touch"
+            >
+              <Download className="w-3.5 h-3.5" />
+              <span>Unduh APK</span>
+            </a>
             <button
               onClick={() => setIsGithubModalOpen(true)}
               className="text-[11px] text-white bg-[#1a0b2c] hover:bg-[#25103d] px-2.5 py-1.5 rounded-lg border border-[#3f1966] transition flex items-center gap-1"
-              title="Publish ke GitHub & Install APK"
+              title="Publish ke GitHub & Status Rilis"
             >
               <Github className="w-3.5 h-3.5 text-[#C084FC]" />
-              <span className="hidden sm:inline">GitHub /</span> APK
+              <span className="hidden sm:inline">GitHub</span>
             </button>
             <button
               onClick={() => setIsScreenshotModalOpen(true)}
@@ -119,7 +129,7 @@ export default function App() {
               className={`flex items-center gap-1 text-[11px] sm:text-xs font-bold px-2.5 sm:px-3 py-1.5 rounded-lg transition shadow-md ${
                 vipUnlocked
                   ? 'bg-[#fbbf24]/20 text-[#fbbf24] border border-[#fbbf24]/40 shadow-[#fbbf24]/10'
-                  : 'bg-gradient-to-r from-[#9333EA] to-[#A855F7] text-white hover:from-[#a855f7] hover:to-[#c084fc] shadow-[#9333EA]/30'
+                  : 'bg-[#200e36] text-[#C084FC] hover:bg-[#2c144a] border border-[#A855F7]/40'
               }`}
             >
               {vipUnlocked ? <Unlock className="w-3.5 h-3.5" /> : <Lock className="w-3.5 h-3.5" />}
@@ -187,6 +197,14 @@ export default function App() {
                 </p>
               </div>
               <div className="flex items-center gap-2 w-full sm:w-auto">
+                <a
+                  href="/download/SHADORE-XY-Touch-v1.0.apk"
+                  download="SHADORE-XY-Touch-v1.0.apk"
+                  className="flex-1 sm:flex-initial text-xs font-bold px-3 py-1.5 rounded-lg bg-gradient-to-r from-[#9333EA] to-[#A855F7] text-white hover:from-[#a855f7] hover:to-[#c084fc] shadow-md shadow-[#9333EA]/30 transition text-center flex items-center justify-center gap-1.5"
+                >
+                  <Download className="w-3.5 h-3.5" />
+                  <span>Unduh APK</span>
+                </a>
                 <button
                   onClick={() => setIsVipModalOpen(true)}
                   className="flex-1 sm:flex-initial text-xs font-semibold px-3 py-1.5 rounded-lg bg-[#200e36] text-[#C084FC] hover:bg-[#2b1447] border border-[#A855F7]/40 transition text-center"

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">SHADØRE XY Touch</string>
+    <string name="title_activity_main">SHADØRE XY Touch</string>
+    <string name="package_name">com.shadore.xytouch</string>
+    <string name="custom_url_scheme">com.shadore.xytouch</string>
+</resources>

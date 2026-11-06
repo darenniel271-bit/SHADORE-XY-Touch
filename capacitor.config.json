@@ -1,0 +1,15 @@
+{
+  "appId": "com.shadore.xytouch",
+  "appName": "SHADØRE XY Touch",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1500,
+      "backgroundColor": "#07040a",
+      "showSpinner": false
+    }
+  }
+}
